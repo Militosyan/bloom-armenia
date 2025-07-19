@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="image/5.png" rel="icon" type="image/png">
+  <title>Bloom Armenia</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <header>
+    <div class="logo" id="logoText">Bloom Armenia</div>
+    <nav>
+      <a href="#contact" id="contactLink">Կապ մեզ հետ</a>
+      <select id="languageSelect" onchange="changeLanguage()" style="margin-left: 20px;">
+        <option value="hy">Հայերեն</option>
+        <option value="en">English</option>
+        <option value="ru">Русский</option>
+      </select>
+    </nav>
+  </header>
+
+  <section class="slider">
+    <div class="slide active">
+      <img src="image/1.jpg" alt="Ծաղիկ 1">
+      <div class="caption" id="caption1">Վարդ — Ամենահայտնի սերը խորհրդանշող ծաղիկն է, որը տարբեր գույներով ունի տարբեր նշանակություններ (կարմիրը՝ սեր, սպիտակը՝ մաքրություն)</div>
+    </div>
+    <div class="slide">
+      <img src="image/2.jpg" alt="Ծաղիկ 2">
+      <div class="caption" id="caption2">Շուշան — Հաճախ ասոցացվում է մաքրության և վերածննդի հետ, հատկապես սպիտակ շուշանը կրոնական խորհրդանիշ է։</div>
+    </div>
+    <div class="slide">
+      <img src="image/3.jpg" alt="Ծաղիկ 3">
+      <div class="caption" id="caption3">Կակաչները  — Գարնան առաջին բերանդներից մեկն է, որը խորհրդանշում է սեր և նոր սկիզբ։</div>
+    </div>
+    <div class="slide">
+      <img src="image/4.jpg" alt="Ծաղիկ 4">
+      <div class="caption" id="caption4">Իռիս — Նրբագեղ կապույտ կամ մանուշակագույն ծաղիկ է, որը հաճախ օգտագործվում է հարսանեկան կոմպոզիցիաներում՝ խորհրդանշելով հավատարմություն և հույս։</div>
+    </div>
+  </section>
+
+  <section class="gallery">
+  <div class="flower" onclick="showInfo(0)">
+    <img src="image/5.jpg" alt="Վարդ">
+    <p class="flowerName">Վարդ</p>
+  </div>
+  <div class="flower" onclick="showInfo(1)">
+    <img src="image/6.jpg" alt="Շուշան">
+    <p class="flowerName">Շուշան</p>
+  </div>
+  <div class="flower" onclick="showInfo(2)">
+    <img src="image/7.jpg" alt="Իռիս">
+    <p class="flowerName">Իռիս</p>
+  </div>
+  <div class="flower" onclick="showInfo(3)">
+    <img src="image/8.jpg" alt="Կակաչները">
+    <p class="flowerName">Կակաչները</p>
+  </div>
+  <div class="flower" onclick="showInfo(4)">
+    <img src="image/9.jpg" alt="Քրիզանթեմ">
+    <p class="flowerName">Քրիզանթեմ</p>
+  </div>
+  <div class="flower" onclick="showInfo(5)">
+    <img src="image/10.jpg" alt="Գլադիոլուս">
+    <p class="flowerName">Գլադիոլուս</p>
+  </div>
+  <div class="flower" onclick="showInfo(6)">
+    <img src="image/11.jpg" alt="Փիոն">
+    <p class="flowerName">Փիոն</p>
+  </div>
+  <div class="flower" onclick="showInfo(7)">
+    <img src="image/12.jpg" alt="Խատուտիկ">
+    <p class="flowerName">Խատուտիկ</p>
+  </div>
+  <div class="flower" onclick="showInfo(8)">
+    <img src="image/13.jpg" alt="Հասմիկ">
+    <p class="flowerName">Հասմիկ</p>
+  </div>
+</section>
+
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">✖</span>
+      <h3 id="modalTitle"></h3>
+      <p id="modalDesc"></p>
+    </div>
+  </div>
+
+  <footer id="contact" class="contact">
+    <h2 id="footerTitle">Կապ մեզ հետ</h2>
+    <p id="phone">📞 Հեռախոսահամար՝ 096434430</p>
+    <p id="email">📧 Էլ. հասցե՝ arsen.melitossian@shnikmail.ru</p>
+    <p>
+      <a href="https://www.instagram.com/bloom.armenia" target="_blank" style="color: #E1306C; font-size: 24px;">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
