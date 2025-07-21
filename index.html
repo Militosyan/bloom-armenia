@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="hy">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="image/5.png" rel="icon" type="image/png" />
+  <title>Bloom Armenia</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+
+  <header class="main-header">
+    <div class="logo">Bloom Armenia</div>
+
+    <div class="header-controls">
+      <div class="header-right-desktop">
+        <select id="languageSelectDesktop" aria-label="Select Language">
+          <option value="hy">HY</option>
+          <option value="en">EN</option>
+          <option value="ru">RU</option>
+        </select>
+
+        <a href="#contact" class="contact-link">Կապ մեզ հետ</a>
+      </div>
+
+      <button class="hamburger-menu" aria-label="Toggle navigation" aria-expanded="false">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </button>
+    </div>
+  </header>
+
+  <nav class="mobile-nav">
+    <a href="#about">Մեր Մասին</a>
+    <a href="#services">Տեսականի</a>
+    <a href="#contact">Կապ մեզ հետ</a>
+    <select id="languageSelectMobile" aria-label="Select Language">
+      <option value="hy">HY</option>
+      <option value="en">EN</option>
+      <option value="ru">RU</option>
+    </select>
+  </nav>
+
+    <section class="slider">
+        <img src="image/1.jpg" alt=""/>
+    </section>
+
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-content">
+      <button class="close" aria-label="Փակել">✖</button>
+      <h3 id="modalTitle"></h3>
+      <p id="modalDesc"></p>
+    </div>
+  </div>
+
+  <footer id="contact" class="contact">
+    <h2 id="footerTitle">Կապ մեզ հետ</h2>
+    <p id="phone">📞 Հեռախոսահամար՝ 096434430</p>
+    <p id="email">📧 Էլ. հասցե՝ arsen.melitossian@shnikmail.ru</p>
+    <p>
+      <a href="https://www.instagram.com/bloom.armenia" target="_blank" rel="noopener noreferrer"
+        style="color: #E1306C; font-size: 24px;">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+
+</html>
